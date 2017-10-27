@@ -1,13 +1,14 @@
-background-image:"/images/sunny-winter.jpg";
-background-size: cover;
+
+
 
 @import url('https://fonts.googleapis.com/css?family=Sansita');
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6, footer{
         font-family: 'Sansita', sans-serif;
 }
-body{
+body, nav{
         font-family: 'Helvetica', sans-serif;
     }
+
 
 *{
  box-sizing: border-box; /* changes width property
@@ -21,13 +22,25 @@ body{
     font-size: 2em;
     font-weight: 600;
     font-family: 'Sansita', sans-serif;
+
 }
 
 footer {
     background-color: #0e89d5;
+    margin:0;
+    
+    padding:0;
 }
 #page-header,header{
     background-color: #0e89d5;
+    display: flex;
+    align-items:center;
+    
+}
+#logo {
+    width: 100px;
+    height: 100px;
+    
 }
 nav {
     position: fixed;
@@ -35,14 +48,18 @@ nav {
     left: 0;
     right: 0;
     background-color: #0e89d5; 
+    
 }
 nav a:link {
     text-decoration: none;
     color: #FFF;
+    margin: 0;
 }
 nav.ul {
     display: flex;
     list-style: none; 
+    
+    
 }
 section{
     background-color: rgba(200,200,200,.6);
@@ -50,6 +67,11 @@ section{
     border: 1px solid;
     border-radius: 5px;
     align-content: center;
+    text-align: center;
+}
+ul.section {
+    display: flex;
+    justify-content: center;
 }
 main {
     display: flex;
@@ -58,6 +80,17 @@ main {
     background-color: #FFF;
     background-image:url("/images/sunny-winter.jpg");
     background-size: cover;
+    background-image:"/images/sunny-winter.jpg";
+    background-size: cover;
+
+}
+#city-name {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Sansita', sans-serif;
+    font-size: 50px
+    
+   
 }
 
 figure {
