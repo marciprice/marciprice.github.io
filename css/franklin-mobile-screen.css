@@ -53,6 +53,8 @@ nav {
     right: 0;
     background-color: #0e89d5; 
     border: 1px solid black;
+    display: flex;
+    flex-direction: row;
     
 }
 nav a:link {
@@ -60,9 +62,10 @@ nav a:link {
     color: #FFF;
     margin: 0;
 }
-nav.ul {
+nav li {
     display: flex;
     list-style: none;  
+    
 }
 main {
     display: flex;
@@ -82,7 +85,7 @@ body {
     
 }
 
-section{
+section {
     background-color: rgba(200,200,200,.6);
     margin: .2em auto;
     border: 1px solid;
@@ -91,6 +94,7 @@ section{
     text-align: center;
     padding: 15px
 }
+
 #temp {
     font-size: 70px;
     font-weight: 600; 
@@ -110,14 +114,15 @@ section{
     align-content: center;
 }
 
-section.cur_conditions {
+
+.cur-conditions {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    
 }
-cur_conditions li{
+.cur-conditions li{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -132,11 +137,7 @@ section ul {
     padding: 0;
    
 }
-cur-conditons li {
-    display:flex;
-    justify-content: space-between;
-    padding: px;
-}
+
 
 .hourly_fore {
         display: none;
@@ -150,11 +151,39 @@ footer {
 
 
 
-@media only screen and (min width 600px) {
-    main {
-        background-image: url(/images/3D-Rain-Drops-Wallpapers.jpg)
-}
+@media screen and (min-width: 600px) {
+    .hourly-fore {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content:space-around;
+        list-style: none;
+        
+    }
     
-    
-    
+    }
+    #boxes{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    #city{
+        display: flex;
+        align-self: flex-start;
+        padding-left: 10px;
+         
+    }
+    nav {
+        position: inherit;
+    }
+    #current-temp {
+        display: flex;
+    }
+    #cur-cond-sunny{
+    display:flex;
+    }
+    .cur-conditions{
+        display:flex;
+        order: -1
+    }
 }
