@@ -49,7 +49,10 @@ h1 {
 
 /*	Background Images - use with Small screens */
 
-.page-header {}
+.page-header {
+    background: url(/responsive_media/images/banner-small.jpg);
+    
+}
 
 
 /*******************************
@@ -109,6 +112,7 @@ h1 {
 	display: block;
 	width: 100%;
 	height: auto;
+    
 }
 
 .image-caption {
@@ -170,7 +174,9 @@ h1 {
 		line-height: 1.125;
 	}
 	/*	Background Images - Use with medium screens */
-	.page-header {}
+	.page-header {
+        background: url(/responsive_media/images/banner-medium.jpg);
+    }
 	.page-nav {
 		position: relative;
 	}
@@ -215,7 +221,9 @@ h1 {
 		line-height: 1.05;
 	}
 	/*	Background Images - Use with large screens */
-	.page-header {}
+	.page-header {
+        background: url(/responsive_media/images/banner-large.jpg);
+    }
 	.page-nav li {
 		flex: 0 1 10%;
 	}
