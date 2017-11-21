@@ -37,22 +37,15 @@ $(function () {
             
             console.log(data);
             
-            $("#title-display").prepend(locationC + ','+locationS +" | ")
-            $("#cityDisplay").html(locationC + ', ' + locationS);
+            $("#title-display").prepend(locationC + ','+locationS +" | ");
+            $("#city-state").html(locationC + ', ' + locationS);
             let round = Math.round(temp_f);
-            $("#currentTemp").html(round + '&deg;F')
-            $("#summary").html('<img src='+ image + '>'+ overview)
-            $("#add1").html('Wind: ' + wind + 'mph')
-            $("#add2").html('Humidity: ' + humidity)
-            $("#add3").html('Feels like: ' + feel + '&deg;F')
+            $("#tempf").html(round + '&deg;F');
+            $("#summary").html('<img src='+ image + '>'+ overview);
+            $("#add1").html('Wind: ' + wind + 'mph');
+            $("#add2").html('Humidity: ' + humidity);
+            $("#add3").html('Feels likee: ' + feel + '&deg;F'
             $("#cover").fadeOut(250);
-            
-//     for ( var i = 0; i < 25; i++) {
-        var hour = data["hourly_forecast"]["FCTTIME"]["hour"]["english"];
-         $("#hourly").html( hour )
-//     }
-            
-            
 
         }
 
