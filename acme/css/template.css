@@ -1,0 +1,53 @@
+/*importing font*/
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+*{
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+/*Header CSS*/
+header{
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff;
+
+}
+/*Body CSS*/
+body{
+    background-image: url("/acme/images/site/background.jpg");
+    background-size: cover;
+/*
+    margin: 0;
+    padding: 0;
+*/
+}
+/*Navigation CSS*/
+nav{
+    position: fixed;
+    background-color: #de2226;
+    background-size:cover;
+    display: flex;
+    flex-direction: row; 
+}
+nav a:link {
+    text-decoration-color: #808080;
+    color: #ffffff;
+    margin: 0;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+nav li {
+    display: flex;
+    list-style: none;
+    
+}
+
+
+
+main{
+    position: fixed;
+}
