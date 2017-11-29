@@ -24,7 +24,7 @@ body{
 }
 /*Navigation CSS*/
 nav{
-    position: fixed;
+    position: inherit;
     background-color: #de2226;
     background-size:cover;
     display: flex;
@@ -43,11 +43,23 @@ ul{
 nav li {
     display: flex;
     list-style: none;
+    justify-content: space-around;
     
 }
 
 
-
+/*Main content CSS*/
 main{
-    position: fixed;
+    display: flex;
+    align-items: center;
+    position: inherit;
+    background-color: #ffffff;
+}
+
+
+/*Footer CSS*/
+footer {
+    display: flex;
+    bottom: 0;
+    
 }
