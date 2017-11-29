@@ -6,7 +6,8 @@
     <title>Search</title>
     <meta name="viewport" content="width=device-width">
   </head>
-    <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+    <form method="get" action="//api.wunderground.com/api/dc0015cc85d66a95/geolookup/conditions/q/"
+    + input + ".json">
   <input type="search" name="query" id="query">
   <input type="submit" name="submit" value="Search" id="send">
 </form>
@@ -26,4 +27,5 @@
     </body>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="search-folder/scripts.js"></script>
+    <script src="menu-activity/scripts/menu.js"></script>
 </html>

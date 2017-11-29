@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title id="title-display">Search</title>
+<meta name="Weather search page" content="This is a site that is used to get the weather in a searched location.">
+  <meta name="viewport" content="width=device-width">
+
+<!--
+    <link rel="stylesheet" type="text/css" href="/css/franklin-mobile-screen.css" media="screen">
+    </head>
+-->
+    
+<!--
+    <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+  <input type="search" name="query" id="query">
+  <input type="submit" name="submit" value="Search" id="send">
+-->
+    
+<body>
+
+<header id="page-header">
+    <img id ="logo" src="/plan-images/logo.jpeg" alt="umbrella">
+    <span class="site-name">Weather Search</span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/index-weather-home.html">Home</a></li>
+    <li><a href="/homework230/franklin-plan.html">Franklin</a></li>
+    <li><a href="/homework230/greenville-plan.html">Greenville</a></li>
+    <li><a href="#">Springville</a></li>
+   <li><a href="#">Search</a></li>
+        </ul>
+        </nav>
+
+ 
+    <main>
+<!--
+         <h1 id="cityDisplay"></h1>
+    <div id="boxes">
+        <section class="cur-temp">
+    <div id="current-temp"><h4>Current Temperature</h4></div>
+    <ul>
+            <li id="currentTemp"></li>
+        </ul>
+    </section>
+    
+<section class="cur-conditions">
+    <h4>Current Conditions</h4>
+    <ul id="current-conditions">
+          <li id="summary"></li>
+          <li id="add1"></li>
+          <li id="add2"></li>
+          <li id="add3"></li>
+    </ul>
+    </section>
+
+<section class="hourly-fore">
+    <h4>Hourly Forecast</h4>
+     <ul>
+         <li id="hourly"></li>
+    </ul> 
+        </section>
+        </div>
+-->
+       <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+  <input type="search" name="query" id="query">
+  <input type="submit" name="submit" value="Search" id="send">
+        
+        <section id="searchResults">
+            <h2>Search Results</h2>
+        </section>  
+        
+        
+        
+        
+</main>
+    
+<footer>
+    <p>&copy; 2017 Weather Site</p>
+    </footer>
+
+    <script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+    <script src="/search-folder/scripts.js"></script>
+    <script src="menu-activity/scripts/menu.js"></script>
+    </body>
+</html>
