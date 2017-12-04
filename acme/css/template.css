@@ -11,6 +11,7 @@ header{
     display: flex;
     align-items: flex-start;
     background-color: #ffffff;
+    padding-left: 8px;
 
 }
 /*Body CSS*/
@@ -24,29 +25,40 @@ body{
 }
 /*Navigation CSS*/
 nav{
-    position: inherit;
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
     background-color: #de2226;
     background-size:cover;
     display: flex;
     flex-direction: row; 
+    text-decoration: none;
 }
 nav a:link {
     text-decoration-color: #808080;
     color: #ffffff;
     margin: 0;
 }
-ul{
+nav ul{
     display: flex;
     flex-direction: row;
-    
+    padding-left: 10px;
+    font-size: 20px;
+    margin:10px;
 }
 nav li {
     display: flex;
     list-style: none;
     justify-content: space-around;
+    padding:10px;
+    color: #ffffff;
     
 }
-
+.navigation li a {
+    text-decoration:none;
+    color: #ffffff;
+}
 
 /*Main content CSS*/
 main{
@@ -54,12 +66,96 @@ main{
     align-items: center;
     position: inherit;
     background-color: #ffffff;
+    padding-left:15px;
+    border-top: #de2226 solid ;
+}
+
+/*HOME PAGE CSS INDEX*/
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+aside{
+    display: flex;
+    position:inherit;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
 }
 
 
+aside div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+   
+}
+    
+#review-content {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#test{
+    display: flex;
+    position: inherit;
+}
 /*Footer CSS*/
 footer {
     display: flex;
-    bottom: 0;
+    background-color: #ffffff;
+    justify-content: center;
+    flex-direction: column;
+    padding:0;
+    margin:0;
+    font-size: 12px;
+    padding-bottom: 5px;
+    border-top: solid;
+    flex-wrap: wrap
     
 }
+footer p {
+    display: flex;
+    justify-content: center;
+    padding:0;
+    margin:0;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOR LARGER SCREENS MEDIA QUERIES*/
+
+@media screen and (min-width: 600px){
+    nav {
+        position: inherit;
+    }
+    main{
+        border-top: none;
+        display: flex;
+        flex-direction: row;
+    }
+    #div-content{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
+
+
+
+
