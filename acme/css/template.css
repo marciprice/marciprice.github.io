@@ -63,39 +63,44 @@ nav li {
 /*Main content CSS*/
 main{
     display: flex;
-    align-items: center;
     position: inherit;
     background-color: #ffffff;
     padding-left:15px;
-    border-top: #de2226 solid ;
+    padding-right: 15px;
+    border-top: #de2226 solid;
+    flex-direction: column;
 }
 
 /*HOME PAGE CSS INDEX*/
-main {
-    display: flex;
-    flex-direction: column;
-}
 
 aside{
     display: flex;
     position:inherit;
     flex-wrap: wrap;
     flex-direction: column;
-    
+    max-width: ;
+    max-height: 
 }
-
+/*
+#home-image {
+    width: 370px;
+    height: auto;
+}
+*/
 
 aside div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
+    
    
 }
     
 #review-content {
     display: flex;
     flex-direction: column;
+    bottom: auto;
     
 }
 
@@ -126,11 +131,17 @@ footer p {
     text-align: center;
 }
 
+.content-page{
+    display:none;
+}
 
 
 
-
-
+#home-image{
+        max-width: 100%;
+        height:auto;
+       
+    }
 
 
 
@@ -147,13 +158,19 @@ footer p {
     main{
         border-top: none;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     #div-content{
         display: flex;
         justify-content: space-around;
     }
-    
+/*
+    #home-image{
+        max-width: 100%;
+        height:auto;
+       
+    }
+*/
 }
 
 
