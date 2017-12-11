@@ -79,9 +79,8 @@ aside{
     position:inherit;
     flex-wrap: wrap;
     flex-direction: column;
-    max-width: ;
-    max-height: ;
 }
+
 /*FEATURE TEXT*/
 #feature-description {
     display: flex;
@@ -111,10 +110,7 @@ aside{
     justify-content:flex-start;
 }
 
-.home-content {
 
-    
-}
 
 /*
 #home-image {
@@ -122,7 +118,13 @@ aside{
     height: auto;
 }
 */
-
+#review-content {
+    display: flex;
+    flex-direction: column;
+    bottom: auto;
+    order: -1;
+    
+}
 
 
 aside div {
@@ -135,17 +137,23 @@ aside div {
 }
 
     
-#review-content {
+
+
+#line1 {
     display: flex;
-    flex-direction: column;
-    bottom: auto;
-    
+    flex-direction: row; 
 }
 
+#line2 {
+    display: flex;
+    flex-direction: row;
+}
 
 #test{
     display: flex;
     position: inherit;
+    flex-direction: column;
+    
 }
 
 /*Footer CSS*/
@@ -171,11 +179,7 @@ footer p {
     text-align: center;
 }
 
-/*
-.content-page{
-    display:none;
-}
-*/
+
 
 
 
@@ -185,27 +189,7 @@ footer p {
        
     }
 
-/*Megan's messing around*/
-/*
-#test {
-    
-}
 
-#recipe-content {
-    border: solid;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-    grid-template-rows: 1fr;
-    grid-gap: 40px;
-    margin-bottom: 30px
-}
-
-#review-content{
-    border: solid;
-}
-*/
-
-/*Megan's done messing around*/
 
 /*FOR LARGER SCREENS MEDIA QUERIES*/
 
