@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<title id="title-display">Acme</title>
+<title id="title-display"></title>
 <meta name="Acme website" content="This is a site that is used buy products in relationship to roadrunners.">
   <meta name="viewport" content="width=device-width">
 
@@ -13,10 +13,10 @@
     <header id="page-header">
         <img id="logo" src="/acme/images/site/logo.png">
     </header>
-<!--    Need json for navigation-->
+
     <nav class="navigation">
     <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="/acme/index.html">Home</a></li>
         <li><a href="#">Anvils</a></li>
         <li><a href="#">Explosives</a></li>
         <li><a href="#">Decoys</a></li>
@@ -27,13 +27,20 @@
 <!--        HOME CONTENT SHOWN AS DEFAULT-->
     <section class="home-content">
         <h1 id="home-title">Welcome to ACME!</h1>
-            <img id="home-image" src="/acme/images/site/feature-lg.jpg" alt="coyote image">
+<!--            <img id="home-image" src="/acme/images/site/feature.jpg" alt="coyote image">-->
+        <ul id="feature-description">
+    <li><h2>Acme Rocket</h2></li>
+    <li>Quick lighting fuse</li>
+    <li>NHTSA approved seat belts</li>
+    <li>Mobile launch stand included</li>
+    <li><a href="#"><img id="actionbtn" alt="Add to cart button" src="/acme/images/site/iwantit.gif"></a></li>
+  </ul>
             </section>
           
         <section id="test">
+        <h2>FEATURED RECIPES</h2>
         <aside id="recipe-content">   
-        ASIDE CONTENT
-            <h2>FEATURED RECIPES</h2>
+            <div id="line1">
             <div>
                 <img src="/acme/images/recipes/bbqsand.jpg" alt="BBQ image">
                 <a href="#">Pulled Roadrunner BBQ</a>
@@ -42,6 +49,8 @@
                 <img src="/acme/images/recipes/potpie.jpg" alt="Pot Pie image">
                 <a href="#">Roadrunner Pot Pie</a>
                 </div>
+            </div>
+            <div id="line2">
             <div>
                 <img src="/acme/images/recipes/soup.jpg" alt="soup image">
                 <a href="#">Roadrunner Soup</a>
@@ -50,12 +59,13 @@
                 <img src="/acme/images/recipes/taco.jpg" alt="taco image">
                 <a href="#">Roadrunner Taco</a>
                 </div>
+            </div>
             </aside>
             
             <section id="review-content">SECTION CONTENT
             <h2>ACME ROCKET REVIEWS</h2>
                 <ul id="review-list">
-                <li>"I don't know how i ever caught Roadrunners before." (9/10)</li>
+                <li>"I don't know how I ever caught Roadrunners before." (9/10)</li>
                 <li>"That thing was fast!"(8/10)</li>
                 <li>"Talk about fast delivery." (10/10)</li>
                 <li>"I didn't even have to pull the meat apart." (9/10)</li>
@@ -66,11 +76,17 @@
         
 <!--        CONTENT PAGES SHOWN WHEN CLICKED-->
         <section class="content-page">
-            <h1 id="content-title">WILL BE INSERTED WITH JSON</h1>
-        <aside id="picture-content">
-            WILL BE INSERTED WITH JSON</aside>
-            <section id="desription-content">WILL BE INSERTED WITH JSON
+            <h1 id="name">WILL BE INSERTED WITH JSON</h1>
+        <aside id="image-aside">
+            <div id="image">
+<!--            <img id="image-right" src="">-->
+            </div>
+            </aside>
+            <section id="description">WILL BE INSERTED WITH JSON
             </section>
+            <div id="manu"></div>
+            <div id="review"></div>
+            <div id="price"></div>
         </section>
         
     </main>
@@ -80,4 +96,7 @@
     <p>&copy; 2017 ACME Inc. All rights reserved. </p><p> All images are believed to be in "Fair Use". Please notice the author if any are not and they will be removed.</p>
     </footer>
     </body>
+    <script src="/jsonweather-html/scripts/jquery-3.0.0.min.js"></script>
+    <script src="/acme/js/data-import.js"></script>
+    <script src="/acme/js/acme.json"></script>
 </html>
