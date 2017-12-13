@@ -46,9 +46,9 @@ $(".navigation").on("click", "a", function (evt) {
   console.log("Look at me: " + navItem);
     
     if (navItem == "Home"){
-        document.getElementsByClassName("home-content").style.visibility = "visible";
+        document.getElementById("home-content").style.display = "block";
         
-        document.getElementsByClassName("content-page").style.visibility = "hidden";
+        document.getElementById("product-content").style.display = "none";
     }
         else {
             $.ajax({
@@ -67,16 +67,17 @@ $(".navigation").on("click", "a", function (evt) {
             var review = data[navItem].reviews;
         
             $("#name").text(name);
-            $("#image").html('<img src="' + image + '" alt="product image"');
+            $("#image").html('<img src="' + image + '" alt="product_image">');
             $("#description").text(description);
             $("#manu").text("Made by: " + manu);
             $("#review").text("Reviews: " + review);
+            $("#price").text("Price: "+ price);
             $("#title-display").html(name + " | ACME");
         
         
-            document.getElementsByClassName("home-content").style.visibility = "hidden";
+            document.getElementById("home-content").style.display = "none";
             
-            document.getElementsByClassName("content-page").style.visibility = "visible";
+            document.getElementById("product-content").style.display = "flex";
      
     }
   });
